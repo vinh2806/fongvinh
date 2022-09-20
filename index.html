@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>do ngu do an hai</title>
+</head>
+
+<body>
+    <h1 class='logo'>
+        Solar explorer
+        <span>Nguyen Phong Vinh</span>  
+        <span>dien thoai xem ko co duoc dau thang l</span>
+    </h1>
+    <input class='planet9' id='pluto' name='planet' type='radio'>
+    <label class='pluto menu' for='pluto'>
+        <div class='preview'></div>
+        <div class='info'>
+            <h2>    
+                <div class='pip'></div>
+                Sao diêm vương
+            </h2>
+            <h3>39.5 AU</h3>
+        </div>
+    </label>
+    <input class='planet8' id='neptune' name='planet' type='radio'>
+    <label class='neptune menu' for='neptune'>
+        <div class='preview'></div>
+        <div class='info'>
+            <h2>
+                <div class='pip'></div>
+                Sao Hải vương
+            </h2>
+            <h3>30.06 AU</h3>
+        </div>
+    </label>
+    <input class='planet7' id='uranus' name='planet' type='radio'>
+    <label class='uranus menu' for='uranus'>
+        <div class='preview'></div>
+        <div class='info'>
+            <h2>
+                <div class='pip'></div>
+                Sao Thiên Vương
+            </h2>
+            <h3>19.18 AU</h3>
+        </div>
+    </label>
+    <input class='planet6' id='saturn' name='planet' type='radio'>
+    <label class='saturn menu' for='saturn'>
+        <div class='preview'></div>
+        <div class='info'>
+            <h2>
+                <div class='pip'></div>
+                Sao thổ
+            </h2>
+            <h3>9.539 AU</h3>
+        </div>
+    </label>
+    <input class='planet5' id='jupiter' name='planet' type='radio'>
+    <label class='jupiter menu' for='jupiter'>
+        <div class='preview'></div>
+        <div class='info'>
+            <h2>
+                <div class='pip'></div>
+                Sao Mộc
+            </h2>
+            <h3>5.203 AU</h3>
+        </div>
+    </label>
+    <input checked='checked' class='planet4' id='mars' name='planet' type='radio'>
+    <label class='menu mars' for='mars'>
+        <div class='preview'></div>
+        <div class='info'>
+            <h2>
+                <div class='pip'></div>
+                Sao Hoả
+            </h2>
+            <h3>1.524 AU</h3>
+        </div>
+    </label>
+    <input checked='checked' class='planet3' id='earth' name='planet' type='radio'>
+    <label class='menu earth' for='earth'>
+        <div class='preview'></div>
+        <div class='info'>
+            <h2>
+                <div class='pip'></div>
+                Trái đất
+            </h2>
+            <h3>1 AU</h3>
+        </div>
+    </label>
+    <input checked='checked' class='planet2' id='venus' name='planet' type='radio'>
+    <label class='menu venus' for='venus'>
+        <div class='preview'></div>
+        <div class='info'>
+            <h2>
+                <div class='pip'></div>
+                Sao Kim
+            </h2>
+            <h3>0.723 AU</h3>
+        </div>
+    </label>
+    <input checked='checked' class='planet1' id='mercury' name='planet' type='radio'>
+    <label class='menu mercury' for='mercury'>
+        <div class='preview'></div>
+        <div class='info'>
+            <h2>
+                <div class='pip'></div>
+                Sao Thuỷ
+            </h2>
+            <h3>0.39 AU</h3>
+        </div>
+    </label>
+    <div class='solar'>
+        <div class='solar_systm'>
+            <div class='planet mercury'>
+                <div class='planet_description mercury'>
+                    <h2> Planet </h2>
+                    <h1> Sao Thuỷ </h1>
+                    <p> Hành tinh gần mặt trời nhất. Nó quay quanh mặt trời nhanh hơn tất cả các hành tinh khác, đó là lý do tại sao
+                        Người La Mã đặt tên nó theo tên vị thần đưa tin nhanh nhẹn của họ. </p>
+                    <label for = 'readMercury'>
+                        <a>
+                            Read Mor
+                            <span> e </span>
+                        </a>
+                    </label>
+                </div>
+                <div class='overlay'></div>
+            </div>
+        </div>
+        <div class='solar_systm'>
+            <div class='planet venus'>
+                <div class='planet_description venus'>
+                    <h2>Planet</h2>
+                    <h1>Sao kim</h1>
+                    <p>Được đặt tên cho nữ thần tình yêu và sắc đẹp của người La Mã. Vào thời cổ đại, sao Kim thường được cho là
+                        hai ngôi sao khác nhau, ngôi sao buổi tối và ngôi sao buổi sáng.</p>
+                    <label for='readVenus'>
+                        <a>
+                            Read Mor
+                            <span>e</span>
+                        </a>
+                    </label>
+                </div>
+                <div class='overlay'></div>
+            </div>
+        </div>
+        <div class='solar_systm'>
+            <div class='planet earth'>
+                <div class='moon moon'>
+                    <h3>Mặt Trăng</h3>
+                    <h2>Mặt Trăng</h2>
+                </div>
+                <div class='trajectory m'></div>
+                <div class='planet_description earth'>
+                    <h2>Planet</h2>
+                    <h1>Trái đất</h1>
+                    <p>Trái đất, ngôi nhà của chúng ta. Nó là hành tinh duy nhất được biết có bầu khí quyển chứa oxy tự do, đại dương
+                        của nước lỏng trên bề mặt của nó, và tất nhiên, sự sống.</p>
+                    <label for='readEarth'>
+                        <a>
+                            Read Mor
+                            <span>e</span>
+                        </a>
+                    </label>
+                </div>
+                <div class='overlay'></div>
+            </div>
+        </div>
+        <div class='solar_systm'>
+            <div class='planet mars'>
+                <div class='moon deimos'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Deimos</h2>
+                </div>
+                <div class='trajectory d'></div>
+                <div class='moon phoebos'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Phoebos</h2>
+                </div>
+                <div class='trajectory p'></div>
+                <div class='planet_description mars'>
+                    <h2>Planet</h2>
+                    <h1>Mars</h1>
+                    <p>Hành tinh thứ tư tính từ Mặt trời và là hành tinh nhỏ thứ hai trong hệ thống năng lượng mặt trời. Được đặt tên theo
+                        Thần chiến tranh của người La Mã thường được gọi là "Hành tinh Đỏ".</p>
+                    <label for='readMars'>
+                        <a>
+                            Read Mor
+                            <span>e</span>
+                        </a>
+                    </label>
+                </div>
+                <div class='overlay'></div>
+            </div>
+        </div>
+        <div class='solar_systm'>
+            <div class='planet jupiter'>
+                <div class='moon lo'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Io</h2>
+                </div>
+                <div class='moon europa'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Europa</h2>
+                </div>
+                <div class='moon ganymede'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Ganymede</h2>
+                </div>
+                <div class='trajectory lop'></div>
+                <div class='trajectory eu'></div>
+                <div class='trajectory ga'></div>
+                <div class='planet_description jupiter'>
+                    <h2>Planet</h2>
+                    <h1>Sao mộc</h1>
+                    <p>Sao Mộc là hành tinh lớn nhất trong hệ mặt trời. Phù hợp, nó được đặt tên theo vị vua của
+                        các vị thần trong thần thoại La Mã.</p>
+                    <label for='readJupiter'>
+                        <a>
+                            Read Mor
+                            <span>e</span>
+                        </a>
+                    </label>
+                </div>
+                <div class='overlay'></div>
+            </div>
+        </div>
+        <div class='solar_systm'>
+            <div class='planet saturn'>
+                <div class='moon titan'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Titan</h2>
+                </div>
+                <div class='moon dione'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Dione</h2>
+                </div>
+                <div class='moon enceladus'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Enceladus</h2>
+                </div>
+                <div class='trajectory ti'></div>
+                <div class='trajectory di'></div>
+                <div class='trajectory enc'></div>
+                <div class='planet_description saturn'>
+                    <h2>Planet</h2>
+                    <h1>Saturn</h1>
+                    <p>Sao Thổ là hành tinh thứ sáu tính từ mặt trời và là hành tinh lớn thứ hai trong hệ mặt trời. sao Thổ
+                        là tên La Mã của Cronus, chúa tể của các Titan.</p>
+                    <label for='readSaturn'>
+                        <a>
+                            Read Mor
+                            <span>e</span>
+                        </a>
+                    </label>
+                </div>
+                <div class='overlay'></div>
+            </div>
+        </div>
+        <div class='solar_systm'>
+            <div class='planet uranus'>
+                <div class='moon miranda'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Miranda</h2>
+                </div>
+                <div class='moon ariel'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Ariel</h2>
+                </div>
+                <div class='moon umbriel'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Umbriel</h2>
+                </div>
+                <div class='trajectory mir'></div>
+                <div class='trajectory ari'></div>
+                <div class='trajectory umb'></div>
+                <div class='planet_description uranus'>
+                    <h2>Planet</h2>
+                    <h1>Uranus</h1>
+                    <p>Hành tinh đầu tiên được phát hiện bởi các nhà khoa học. Hành tinh này đáng chú ý vì độ nghiêng ấn tượng của nó,
+                        khiến trục của nó gần như hướng trực tiếp vào mặt trời.</p>
+                    <label for='readUranus'>
+                        <a>
+                            Read Mor
+                            <span>e</span>
+                        </a>
+                    </label>
+                </div>
+                <div class='overlay'></div>
+            </div>
+        </div>
+        <div class='solar_systm'>
+            <div class='planet neptune'>
+                <div class='moon triton'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Triton</h2>
+                </div>
+                <div class='moon proteus'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Proteus</h2>
+                </div>
+                <div class='moon nereid'>
+                    <h3>Mặt trăng</h3>
+                    <h2>Nereid</h2>
+                </div>
+                <div class='trajectory tri'></div>
+                <div class='trajectory pro'></div>
+                <div class='trajectory ner'></div>
+                <div class='planet_description neptune'>
+                    <h2>Planet</h2>
+                    <h1>sao Hải vương</h1>
+                    <p>Sao Hải Vương hiện là hành tinh xa nhất tính từ Mặt Trời do sao Diêm Vương đã không còn được coi là một hành tinh vào năm 2006. Sao Hải Vương là một trong những hành tinh khí trong Hệ Mặt trời, nhỏ hơn sao Thiên Vương và có khối lượng gấp 17 lần Trái Đất.</p>
+                    <label for='readNeptune'>
+                        <a>
+                            Read Mor
+                            <span>e</span>
+                        </a>
+                    </label>
+                </div>
+                <div class='overlay'></div>
+            </div>
+        </div>
+        <div class='solar_systm'>
+            <div class='planet pluto'>
+                <div class='planet_description pluto'>
+                    <h2>Hành tinh lùn</h2>
+                    <h1>Pluto</h1>
+                    <p>Sao Diêm Vương, từng được coi là hành tinh thứ chín và xa mặt trời nhất, hiện là hành tinh lớn nhất được biết đến
+                        hành tinh lùn trong hệ thống năng lượng mặt trời.</p>
+                    <label for='readPluto'>
+                        <a>
+                            Read Mor
+                            <span>e</span>
+                        </a>
+                    </label>
+                </div>
+                <div class='overlay'></div>
+            </div>
+        </div>
+    </div>
+    <input class='read' id='readMercury' name='mercuryRead' type='radio'>
+    <label class='closeBig' for='closeMercury'></label>
+    <input class='read' id='closeMercury' name='mercuryRead' type='radio'>
+    <div class='panel'>
+        <h1>Sao Thuỷ </h1>
+        <p> Sao Thủy là hành tinh gần mặt trời nhất. Như vậy, nó quay quanh mặt trời nhanh hơn tất cả các hành tinh khác,
+            đó là lý do tại sao người La Mã đặt tên nó theo tên vị thần đưa tin nhanh nhẹn của họ. </p>
+        <p> Người Sumer cũng biết đến sao Thủy từ ít nhất 5.000 năm trước. Nó thường được liên kết với Nabu, vị thần
+            viết về. Sao Thủy cũng được đặt những cái tên riêng biệt vì sự xuất hiện của nó vừa là một ngôi sao buổi sáng vừa là một
+            sao hôm. Tuy nhiên, các nhà thiên văn Hy Lạp biết rằng hai cái tên này đề cập đến cùng một thiên thể, và Heraclitus,
+            vào khoảng năm 500 trước Công nguyên, người ta nghĩ chính xác rằng cả sao Thủy và sao Kim đều quay quanh mặt trời chứ không phải Trái đất. </p>
+        <img
+            src = 'https://i2.wp.com/www.astronomytrek.com/wp-content/uploads/2012/11/mercury-1.jpg?fit=678% 2C381&amp;ssl=1'>
+        <h2> Một năm trên sao Thủy chỉ dài 88 ngày. </h2>
+        <p> Một ngày Mặt Trời (thời gian từ trưa đến trưa trên bề mặt hành tinh) trên sao Thủy kéo dài tương đương với 176
+            Ngày Trái đất trong khi ngày cận nhật (thời gian cho 1 vòng quay liên quan đến một điểm cố định) kéo dài 59 Trái đất
+            ngày. Sao Thủy gần như bị khóa chặt với Mặt trời và theo thời gian, điều này đã làm chậm sự quay của hành tinh
+            để gần như khớp với quỹ đạo của nó quanh Mặt trời. Sao Thủy cũng có độ lệch tâm quỹ đạo cao nhất trong số các
+            các hành tinh có khoảng cách với Mặt trời từ 46 đến 70 triệu km. </p>
+        <h2> Sao Thủy là hành tinh nhỏ nhất trong Hệ Mặt Trời. </h2>
+        <p> Một trong năm hành tinh có thể nhìn thấy bằng mắt thường a, Sao Thủy chỉ cách đường xích đạo của nó 4.879 km,
+            so với 12.742 kilômét của Trái đất. </p>
+        <h2> Sao Thủy là hành tinh dày đặc thứ hai. </h2>
+        <p> Mặc dù hành tinh này nhỏ, nhưng sao Thủy lại rất dày đặc. Mỗi cm khối có khối lượng riêng là 5,4 gam,
+            chỉ có Trái đất có mật độ cao hơn. Điều này phần lớn là do sao Thủy được cấu tạo chủ yếu bởi
+            kim loại và đá. </p>
+        <h2> Sao Thủy có các nếp nhăn. </h2>
+        <p> Khi lõi sắt của hành tinh nguội đi và co lại, bề mặt của hành tinh trở nên nhăn nheo. Nhà khoa học
+            đã đặt tên cho những nếp nhăn này, Lobate Scarps. Những chiếc Scarps này có thể cao tới một dặm và dài hàng trăm dặm.
+        </p>
+        <br>
+    </div>
+    <input class='read' id='readVenus' name='venusRead' type='radio'>
+    <label class='closeBig' for='closeVenus'></label>
+    <input class='read' id='closeVenus' name='venusRead' type='radio'>
+    <div class='panel'>
+        <h1> Sao Kim </h1>
+        <p> Sao Kim, hành tinh thứ hai tính từ mặt trời, được đặt tên cho nữ thần tình yêu và sắc đẹp của người La Mã. Hành tinh -
+            hành tinh duy nhất được đặt tên theo một phụ nữ - có thể đã được đặt tên cho vị thần đẹp nhất trong quần thể của cô ấy bởi vì
+            nó chiếu sáng nhất trong số năm hành tinh mà các nhà thiên văn cổ đại biết đến. </p>
+        <p> Vào thời cổ đại, sao Kim thường được cho là hai ngôi sao khác nhau, ngôi sao buổi tối và ngôi sao buổi sáng -
+            có nghĩa là, những cái xuất hiện lần đầu tiên vào lúc hoàng hôn và bình minh. Trong tiếng Latinh, chúng được gọi là
+            Vesper và Lucifer. Vào thời Cơ đốc giáo, Lucifer, hay "người mang ánh sáng", được biết đến với cái tên Satan
+            trước khi sa ngã của mình. Tuy nhiên, những quan sát sâu hơn về Sao Kim trong kỷ nguyên không gian cho thấy một môi trường rất địa ngục.
+            Điều này làm cho sao Kim trở thành một hành tinh rất khó quan sát từ gần, vì các tàu vũ trụ không tồn tại lâu
+            bề mặt của nó. </p>
+        <img src='https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2014/2-whatistheave.jpg'>
+        <h2> Một ngày trên sao Kim kéo dài hơn một năm. </h2>
+        <p> Phải mất 243 ngày Trái đất quay một lần trên trục của nó (ngày cận nhật). Quỹ đạo của hành tinh xung quanh Mặt trời mất
+            225 ngày Trái đất, so với 365 ngày của Trái đất. Một ngày trên bề mặt sao Kim (ngày mặt trời) mất 117 ngày Trái đất.
+        </p>
+        <h2> Sao Kim quay theo hướng ngược lại với hầu hết các hành tinh khác. </h2>
+        <p> Điều này có nghĩa là sao Kim đang quay ngược hướng với Mặt trời, đây còn được gọi là sự quay ngược
+            Vòng xoay. Một lý do có thể có thể là một vụ va chạm trong quá khứ với một tiểu hành tinh hoặc vật thể khác đã gây ra
+            hành tinh để thay đổi đường quay của nó. Nó cũng khác với hầu hết các hành tinh khác trong hệ thống năng lượng mặt trời của chúng ta bởi
+            không có vệ tinh tự nhiên. </p>
+        <h2> Sao Kim là thiên thể sáng thứ hai trên bầu trời đêm. </h2>
+        <p> Chỉ có Mặt trăng là sáng hơn. Với cường độ từ -3,8 đến -4,6 sao Kim rất sáng nên có thể nhìn thấy nó trong
+            ban ngày vào một ngày quang đãng. </p>
+        <h2> Áp suất khí quyển trên Sao Kim lớn hơn Trái Đất 92 lần. </h2>
+        <p> Mặc dù kích thước và khối lượng của nó tương tự như Trái đất, nhưng các tiểu hành tinh nhỏ bị nghiền nát khi đi vào bầu khí quyển của nó,
+            nghĩa là không có miệng núi lửa nhỏ nào nằm trên bề mặt hành tinh. Áp lực mà con người cảm thấy trên bề mặt sẽ
+            tương đương với trải nghiệm sâu dưới đáy biển trên Trái đất. </p>
+        <br>
+    </div>
+    <input class='read' id='readEarth' name='earthRead' type='radio'>
+    <label class='closeBig' for='closeEarth'></label>
+    <input class='read' id='closeEarth' name='earthRead' type='radio'>
+    <div class='panel'>
+        <h1> Trái đất </h1>
+        <p> Trái đất, ngôi nhà của chúng ta, là hành tinh thứ ba tính từ mặt trời. Nó là hành tinh duy nhất được biết là có bầu khí quyển
+            chứa oxy tự do, đại dương nước lỏng trên bề mặt và tất nhiên là cả sự sống. </p>
+        <p> Trái đất là hành tinh lớn thứ năm trong số các hành tinh trong hệ thống năng lượng mặt trời - nhỏ hơn bốn hành tinh khổng lồ khí, Sao Mộc,
+            Sao Thổ, Sao Thiên Vương, nhưng lớn hơn ba hành tinh đá khác, </p>
+        <img
+            src = 'https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350'>
+        <h2> Vòng quay của Trái đất đang dần chậm lại. </h2>
+        <p> Sự giảm tốc này diễn ra gần như không thể nhận thấy, ở mức khoảng 17 mili giây mỗi trăm năm,
+            mặc dù tốc độ xảy ra nó không hoàn toàn đồng nhất. Điều này có tác dụng kéo dài ngày của chúng ta,
+            nhưng nó xảy ra chậm đến mức có thể lên tới 140 triệu năm trước khi độ dài của một ngày
+            tăng lên 25 giờ. </p>
+        <h2> Trái đất từng được cho là trung tâm của vũ trụ. </h2>
+        <p> Do chuyển động rõ ràng của Mặt trời và các hành tinh liên quan đến quan điểm của chúng, các nhà khoa học cổ đại
+            khẳng định rằng Trái đất vẫn ở trạng thái tĩnh, trong khi các thiên thể khác di chuyển theo quỹ đạo tròn xung quanh
+            nó. Cuối cùng, quan điểm cho rằng Mặt trời ở trung tâm của vũ trụ đã được Copernicus công nhận.
+            đây cũng không phải là trường hợp. </p>
+        <h2> Trái đất có một từ trường mạnh mẽ. </h2>
+        <p> Hiện tượng này là do lõi niken-sắt của hành tinh, cùng với sự quay nhanh của nó. Vùng này
+            bảo vệ Trái đất khỏi tác động của gió Mặt trời. </p>
+        <h2> Chỉ có một vệ tinh tự nhiên của hành tinh Trái đất. </h2>
+        <p> Theo phần trăm kích thước của thiên thể mà nó quay quanh, Mặt trăng là vệ tinh lớn nhất so với bất kỳ hành tinh nào trong
+            hệ thống năng lượng mặt trời. Tuy nhiên, về mặt thực tế, nó chỉ là vệ tinh tự nhiên lớn thứ năm. </p>
+        <br>
+    </div>
+    <input class='read' id='readMars' name='marsRead' type='radio'>
+    <label class='closeBig' for='closeMars'></label>
+    <input class='read' id='closeMars' name='marsRead' type='radio'>
+    <div class='panel'>
+        <h1> Sao Hỏa </h1>
+        <p> Sao Hỏa là hành tinh thứ tư tính từ mặt trời. Để phù hợp với màu máu của hành tinh đỏ, người La Mã đã đặt tên cho nó
+            thần chiến tranh của họ. Người La Mã đã sao chép những người Hy Lạp cổ đại, những người cũng đặt tên cho hành tinh này theo tên thần chiến tranh của họ,
+            Ares. Các nền văn minh khác cũng thường đặt tên hành tinh dựa trên màu sắc của nó - ví dụ:
+            Người Ai Cập đặt tên cho nó là "Her Desher," có nghĩa là "người màu đỏ", trong khi các nhà thiên văn Trung Quốc cổ đại gọi nó là "
+            ngôi sao lửa. "</p>
+        <img
+            src='https://1.bp.blogspot.com/-ou7Je3OVg6U/WYtxDqjNp_I/AAAAAAAACSQ/fsopS5VtFg4bmlv8hQNfiRYfJqTygCotQCLcBGAs/s2048/Martian%2Blandscape%2Bby%2BAmante%2BLombardi.jpg'>
+            <h2> Sao Hỏa và Trái đất có cùng diện tích đất. </h2>
+            <p> Mặc dù sao Hỏa chỉ có 15% thể tích Trái đất và chỉ hơn 10% khối lượng Trái đất, khoảng 2/3
+                bề mặt Trái đất được bao phủ trong nước. Trọng lực bề mặt sao Hỏa chỉ bằng 37% trọng lực của Trái đất (nghĩa là bạn
+                có thể nhảy vọt cao hơn gần ba lần trên sao Hỏa). </p>
+            <h2> Sao Hỏa là nơi có ngọn núi cao nhất trong hệ thống năng lượng mặt trời. </h2>
+            <p> Olympus Mons, một ngọn núi lửa hình khiên, cao 21 km và đường kính 600 km. Mặc dù đã hình thành hơn hàng tỷ
+                nhiều năm, bằng chứng từ các dòng dung nham núi lửa nên gần đây nhiều nhà khoa học tin rằng nó vẫn có thể hoạt động. </p>
+            <h2> Chỉ 18 sứ mệnh lên sao Hỏa đã thành công. </h2>
+            <p> Tính đến tháng 9 năm 2014, đã có 40 sứ mệnh tới sao Hỏa, bao gồm tàu ​​quỹ đạo, tàu đổ bộ và tàu lặn nhưng không
+                đếm ruồi. Những lần đến gần đây nhất bao gồm sứ mệnh Mars Curiosity vào năm 2012, sứ mệnh MAVEN,
+                đến vào ngày 22 tháng 9 năm 2014, tiếp theo là MOM Mangalyaan của Tổ chức Nghiên cứu Không gian Ấn Độ
+                tàu quỹ đạo, đã đến vào ngày 24 tháng 9 năm 2014. Các sứ mệnh tiếp theo sẽ đến là Không gian Châu Âu
+                Sứ mệnh ExoMars của Agency, bao gồm một tàu quỹ đạo, tàu đổ bộ và một máy bay, tiếp theo là robot InSight của NASA
+                nhiệm vụ tàu đổ bộ, dự kiến ​​ra mắt vào tháng 3 năm 2016 và dự kiến ​​đến vào tháng 9 năm 2016. </p>
+            <h2> Sao Hỏa có bão bụi lớn nhất trong hệ thống năng lượng mặt trời. </h2>
+            <p> Chúng có thể tồn tại trong nhiều tháng và bao phủ toàn bộ hành tinh. Các mùa rất khắc nghiệt vì nó có hình elip
+                Đường quỹ đạo (hình bầu dục) quanh Mặt trời dài hơn hầu hết các hành tinh khác trong hệ thống năng lượng mặt trời. </p>
+            <br>
+        </div>
+        <input class = 'read' id = 'readJupiter' name = 'jupiterRead' type = 'radio'>
+        <label class = 'closeBig' for = 'closeJupiter'> </label>
+        <input class = 'read' id = 'closeJupiter' name = 'jupiterRead' type = 'radio'>
+        <div class = 'panel'>
+            <h1> Sao Mộc </h1>
+            <p> Sao Mộc là hành tinh lớn nhất trong hệ Mặt Trời. Thật phù hợp, nó được đặt theo tên của vị vua của các vị thần ở La Mã
+                thần thoại. Theo cách tương tự, người Hy Lạp cổ đại đã đặt tên hành tinh này theo tên của thần Zeus, vị vua của người Hy Lạp.
+                pantheon. </p>
+        <p>Sao Mộc đã giúp cách mạng hóa cách chúng ta nhìn vũ trụ và bản thân vào năm 1610, khi Galileo phát hiện ra
+            Bốn mặt trăng lớn của Sao Mộc - Io, Europa, Ganymede và Callisto, ngày nay được gọi là mặt trăng Galilean. Đây là
+            lần đầu tiên người ta nhìn thấy các thiên thể quay quanh một vật thể không phải là Trái đất, hỗ trợ chính của
+            Copernican cho rằng Trái đất không phải là trung tâm của vũ trụ. </p>
+        <img src='data:image/jpeg;base64,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   '>
+        <h2> Sao Mộc là thiên thể sáng thứ tư trong hệ Mặt Trời. </h2>
+        <p> Chỉ có Mặt trời, Mặt trăng và Sao Kim là sáng hơn. Nó là một trong năm hành tinh có thể nhìn thấy bằng mắt thường từ Trái đất. </p>
+        <h2> Người Babylon cổ đại là những người đầu tiên ghi lại cảnh họ nhìn thấy Sao Mộc. </h2>
+        <p> Đây là khoảng thế kỷ thứ 7 hoặc thứ 8 trước Công nguyên. Sao Mộc được đặt theo tên của vị vua của các vị thần La Mã. Đối với người Hy Lạp,
+            nó đại diện cho Zeus, vị thần sấm sét. Người Lưỡng Hà coi sao Mộc là thần Marduk và người bảo trợ cho
+            thành phố Babylon. Các bộ lạc Germanic coi hành tinh này là Donar, hoặc Thor. </p>
+        <h2> Sao Mộc có ngày ngắn nhất trong tất cả các hành tinh. </h2>
+        <p> Cứ 9 giờ 55 phút nó lại quay trên trục một lần. Sự quay nhanh làm phẳng hành tinh một chút,
+            tạo cho nó một hình dạng khối vuông. </p>
+        <h2> Sao Mộc quay quanh Mặt trời 11,8 năm Trái đất một lần. </h2>
+        <p> Theo quan điểm của chúng tôi về Trái đất, nó dường như di chuyển chậm trên bầu trời, mất nhiều tháng để di chuyển từ một
+            chòm sao khác. </p>
+        <br>
+    </div>
+    <input class = 'read' id = 'readSaturn' name = 'saturnRead' type = 'radio'>
+    <label class = 'closeBig' for = 'closeSaturn'> </label>
+    <input class = 'read' id = 'closeSaturn' name = 'saturnRead' type = 'radio'>
+    <div class = 'panel'>
+        <h1> Sao thổ </h1>
+        <p> Sao Thổ là hành tinh thứ sáu tính từ mặt trời và là hành tinh lớn thứ hai trong hệ mặt trời. Sao Thổ là
+            Tên La Mã của Cronus, chúa tể của các Titan trong thần thoại Hy Lạp. Saturn là gốc của từ tiếng Anh
+            "Thứ Bảy." </p>
+        <p> Sao Thổ là hành tinh xa Trái đất nhất có thể nhìn thấy bằng mắt thường, nhưng qua kính viễn vọng
+            những đặc điểm nổi bật nhất của hành tinh có thể được nhìn thấy: các vành đai của Sao Thổ. Mặc dù các đại gia khí đốt khác trong
+            hệ thống năng lượng mặt trời - Sao Mộc, Sao Thiên Vương và Sao Hải Vương - cũng có những vành đai, những vòng của Sao Thổ chắc chắn là nhiều nhất
+            phi thường. </p>
+        <img src='http://ak0.picdn.net/shutterstock/videos/4049260/thumb/1.jpg'>
+        <h2> Có thể nhìn thấy sao Thổ bằng mắt thường. </h2>
+        <p> Nó là vật thể sáng thứ năm trong hệ thống năng lượng mặt trời và cũng có thể dễ dàng nghiên cứu thông qua ống nhòm hoặc một
+            kính thiên văn. </p>
+        <h2> Người xưa đã biết đến sao Thổ, bao gồm cả người Babylon và các nhà quan sát vùng Viễn Đông. </h2>
+        <p> Nó được đặt tên theo vị thần La Mã Saturnus, và được người Hy Lạp gọi là Cronus. </p>
+        <h2> Sao Thổ là hành tinh phẳng nhất. </h2>
+        <p> Đường kính cực của nó bằng 90% đường kính xích đạo của nó, điều này là do mật độ thấp và quay nhanh.
+            Sao Thổ quay trên trục của nó cứ sau 10 giờ 34 phút một lần, khiến nó có ngày ngắn thứ hai trong số các
+            các hành tinh của hệ thống năng lượng mặt trời. </p>
+        <h2> Sao Thổ quay quanh Mặt trời 29,4 năm Trái đất một lần. </h2>
+        <p> Chuyển động chậm chạp của nó so với bối cảnh của các ngôi sao đã khiến nó có biệt danh là “Lubadsagush” từ thời cổ đại
+            Người Assyria. Cái tên này có nghĩa là "lâu đời nhất trong số những cái cũ". </p>
+        <br>
+    </div>
+    <input class = 'read' id = 'readUranus' name = 'uranusRead' type = 'radio'>
+    <label class = 'closeBig' for = 'closeUranus'> </label>
+    <input class = 'read' id = 'closeUranus' name = 'uranusRead' type = 'radio'>
+    <div class = 'panel'>
+        <h1> Sao Thiên Vương </h1>
+        <p> Sao Thiên Vương là hành tinh thứ bảy tính từ mặt trời và là hành tinh đầu tiên được các nhà khoa học phát hiện. Mặc dù sao Thiên Vương là
+            có thể nhìn thấy bằng mắt thường, nó từ lâu đã bị nhầm lẫn là một ngôi sao vì hành tinh mờ và quỹ đạo chậm. Các
+            Hành tinh này cũng đáng chú ý vì độ nghiêng ấn tượng của nó, khiến trục của nó gần như hướng thẳng vào mặt trời. </p>
+        <p> Nhà thiên văn học người Anh William Herschel tình cờ phát hiện ra Sao Thiên Vương vào ngày 13 tháng 3 năm 1781, bằng kính thiên văn của mình
+            trong khi khảo sát tất cả các ngôi sao đến những ngôi sao mờ hơn khoảng 10 lần so với những gì có thể nhìn thấy bằng mắt thường. Một ngôi sao"
+            có vẻ khác, và trong vòng một năm, sao Thiên Vương đã được chứng minh là quay theo một quỹ đạo hành tinh. </p>
+        <img src='http://www.cosmosup.com/wp-content/uploads/2016/02/Uranus-Facts-About-the-Planet-Uranus-700x325.jpg'>
+        <h2> Sao Thiên Vương được Sir William Herschel chính thức phát hiện vào năm 1781. </h2>
+        <p> Người xưa nhìn thấy nó quá mờ. Lúc đầu Herschel nghĩ rằng đó là một sao chổi, nhưng vài năm sau
+            sau đó nó được xác nhận là một hành tinh. Herscal đã cố gắng đặt tên khám phá của mình là “Sidus Georgia” theo tên Vua
+            George III. Cái tên Uranus do nhà thiên văn học Johann Bode gợi ý. Tên bắt nguồn từ tiếng Hy Lạp cổ đại
+            thần Ouranos. </p>
+        <h2> Sao Thiên Vương quay trên trục của nó cứ 17 giờ 14 phút một lần. </h2>
+        <p> Hành tinh quay theo hướng ngược lại, ngược với cách quay của Trái đất và hầu hết các hành tinh khác. </p>
+        <h2> Sao Thiên Vương thực hiện một chuyến đi quanh Mặt trời cứ sau 84 năm Trái đất. </h2>
+        <p> Trong một số phần của quỹ đạo của nó, một hoặc khác của các cực của nó hướng trực tiếp vào Mặt trời và mất khoảng 42 năm
+            ánh sáng mặt trời trực tiếp. Thời gian còn lại họ chìm trong bóng tối. </p>
+        <h2> Sao Thiên Vương thường được gọi là hành tinh "băng khổng lồ". </h2>
+        <p> Giống như các khối khí khổng lồ khác, nó có lớp trên là hydro, có trộn heli. Bên dưới là lớp băng giá
+            “Lớp phủ, bao quanh lõi đá và băng. Bầu khí quyển trên được tạo thành từ nước, amoniac và mêtan
+            các tinh thể băng khiến hành tinh có màu xanh lam nhạt. </p>
+        <br>
+    </div>
+    <input class = 'read' id = 'readNeptune' name = 'neptuneRead' type = 'radio'>
+    <label class = 'closeBig' for = 'closeNeptune'> </label>
+    <input class = 'read' id = 'closeNeptune' name = 'neptuneRead' type = 'radio'>
+    <div class = 'panel'>
+        <h1> Sao Hải Vương </h1>
+        <p> Sao Hải Vương là hành tinh thứ tám tính từ mặt trời. Nó là hành tinh đầu tiên được tiên đoán về sự tồn tại của nó
+            các phép tính toán học trước khi nó thực sự được nhìn thấy qua kính thiên văn vào ngày 23 tháng 9 năm 1846. Sự bất thường
+            trong quỹ đạo của Sao Thiên Vương khiến nhà thiên văn học người Pháp Alexis Bouvard cho rằng lực hấp dẫn từ
+            một thiên thể khác có thể chịu trách nhiệm. Nhà thiên văn học người Đức Johann Galle sau đó đã dựa vào
+            tính toán để giúp phát hiện Sao Hải Vương qua kính viễn vọng. Trước đây, nhà thiên văn học Galileo Galilei đã phác thảo hành tinh này,
+            nhưng anh ấy đã nhầm nó với một ngôi sao do chuyển động chậm của nó. Phù hợp với tất cả các hành tinh khác được nhìn thấy trong
+            bầu trời, thế giới mới này được đặt tên từ thần thoại Hy Lạp và La Mã - Neptune, vị thần biển của La Mã. </p>
+        <p> Chỉ có một sứ mệnh đã bay bởi Sao Hải Vương - Chuyến du hành 2 vào năm 1989 - có nghĩa là các nhà thiên văn đã thực hiện hầu hết các nghiên cứu
+            sử dụng kính thiên văn trên mặt đất. Ngày nay, vẫn còn nhiều bí ẩn về hành tinh xanh mát, chẳng hạn như
+            tại sao gió của nó lại có tốc độ nhanh như vậy và tại sao từ trường của nó lại bị lệch. </p>
+        <img    
+            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy8Dd14tbXAzh1iz-EJl9tulRwH7Bb-SxX6sXpKFDbqb-NKwpE'>
+            <h2> Người xưa không biết đến sao Hải Vương. </h2>
+            <p> Nó không thể nhìn thấy bằng mắt thường và được quan sát lần đầu tiên vào năm 1846. Vị trí của nó được xác định bằng cách sử dụng
+                dự đoán toán học. Nó được đặt theo tên của thần biển La Mã. </p>
+            <h2> Sao Hải Vương quay rất nhanh trên trục của nó. </h2>
+            <p> Các đám mây ở xích đạo của nó mất 18 giờ để thực hiện một vòng quay. Điều này là do Sao Hải Vương không phải là vật thể rắn. </p>
+            <h2> Sao Hải Vương là sao nhỏ nhất trong số những người khổng lồ băng. </h2>
+            <p> Mặc dù nhỏ hơn Sao Thiên Vương, nhưng Sao Hải Vương có khối lượng lớn hơn. Bên dưới bầu khí quyển nặng của nó, sao Thiên Vương được tạo thành từ
+                các lớp khí hydro, heli và metan. Chúng bao bọc một lớp nước, amoniac và băng mêtan. Các
+                lõi bên trong của hành tinh được làm bằng đá. </p>
+            <h2> Bầu khí quyển của Sao Hải Vương được tạo thành từ hydro và heli, với một số khí metan. </h2>
+            <p> Khí mê-tan hấp thụ ánh sáng đỏ, khiến hành tinh có màu xanh lam đáng yêu. Những đám mây mỏng, cao trôi trong
+                bầu khí quyển trên cao. </p>
+        </div>
+        <input class = 'read' id = 'readPluto' name = 'plutoRead' type = 'radio'>
+        <label class = 'closeBig' for = 'closePluto'> </label>
+        <input class = 'read' id = 'closePluto' name = 'plutoRead' type = 'radio'>
+        <div class = 'panel'>
+            <h1> Sao Diêm Vương </h1>
+            <p> Sao Diêm Vương, từng được coi là hành tinh thứ chín và xa mặt trời nhất, hiện là hành tinh lùn lớn nhất được biết đến
+                trong hệ thống năng lượng mặt trời. Nó cũng là một trong những thành viên lớn nhất được biết đến của Vành đai Kuiper, một vùng bóng tối bên ngoài
+                quỹ đạo của Sao Hải Vương được cho là có hàng trăm nghìn thiên thể đá, băng giá, mỗi thiên thể lớn hơn
+                Chiều ngang 62 dặm (100 km), cùng với 1 nghìn tỷ sao chổi trở lên. </p>
+            <p> Năm 2006, Sao Diêm Vương được phân loại lại là hành tinh lùn, một sự thay đổi được nhiều người nghĩ đến như một sự cách chức. Câu hỏi của
+                Tình trạng hành tinh của sao Diêm Vương đã thu hút nhiều tranh cãi và khuấy động cuộc tranh luận trong cộng đồng khoa học, và giữa các
+                công chúng, kể từ đó. Năm 2017, một nhóm khoa học (bao gồm các thành viên của sứ mệnh Chân trời mới)
+                đề xuất một định nghĩa mới về mặt phẳng dựa trên "các vật thể tròn trong không gian nhỏ hơn các ngôi sao", điều này sẽ
+                làm cho số lượng hành tinh trong hệ thống năng lượng mặt trời của chúng ta tăng từ 8 lên khoảng 100. </p>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/asd.jpeg'>
+        <h2> Sao Diêm Vương được đặt theo tên của vị thần âm phủ của Hy Lạp. </h2>
+        <p> Đây là tên sau này của Hades được biết đến nhiều hơn và được đề xuất bởi Venetia Burney, một cậu bé 11 tuổi
+            nữ sinh đến từ Oxford, Anh. </p>
+        <h2> Sao Diêm Vương được phân loại lại từ một hành tinh thành hành tinh lùn vào năm 2006. </h2>
+        <p> Đây là khi IAU chính thức hóa định nghĩa về một hành tinh là “Một hành tinh là một thiên thể (a) nằm trong
+            quỹ đạo quanh Mặt trời, (b) có đủ khối lượng để tự trọng của nó thắng các lực của vật thể cứng để nó
+            giả định một hình dạng cân bằng thủy tĩnh (gần tròn) và (c) đã xóa vùng lân cận xung quanh nó
+            quỹ đạo. ”</p>
+        <h2> Sao Diêm Vương được Đài quan sát Lowell phát hiện vào ngày 18 tháng 2 năm 1930. </h2>
+        <p> Trong 76 năm kể từ khi sao Diêm Vương được phát hiện và thời điểm nó được phân loại lại thành hành tinh lùn
+            hoàn thành dưới một phần ba quỹ đạo của nó quanh Mặt trời. </p>
+        <h2> Sao Diêm Vương có năm mặt trăng đã biết. </h2>
+        <p> Các mặt trăng là Charon (được phát hiện vào năm 1978), Hydra và Nix (cả hai được phát hiện vào năm 2005), Kerberos ban đầu là P4
+            (phát hiện 2011) và Styx ban đầu là P5 (phát hiện 2012) các chỉ định chính thức S / 2011 (134340) 1 và
+            S / 2012 (134340) 1. </p>
+    </div>
+
+</body>
+
+</html>
